@@ -22,9 +22,9 @@ $(document).ready(function() {
     // post tweet to mongodb and when finished insert it into the tweet sections.
     $.ajax({
       type: 'POST',
-      url: '/tweets',
+      url: 'tweets',
       data: str
-    }).done($.get('/tweets', function(data) {
+    }).done($.get('tweets', function(data) {
       console.log(data);
       let post = data[data.length - 1];
       let newTweet = createTweetElement(post);
