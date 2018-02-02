@@ -17,4 +17,4 @@ Enter the webite, click on compose and start tweeting!
 - mongodb 2.2.34
 
 ## screen shot
-the screen [#](https://github.com/Joe-mcgee/tweeter/blob/master/screenshots/Screenshot%20from%202018-02-01%2018-42-16.jpg)
+!['the screen'](https://github.com/Joe-mcgee/tweeter/blob/master/screenshots/Screenshot%20from%202018-02-01%2018-42-16.jpg)
