@@ -32,3 +32,17 @@ body {
   background-color: white;
 
 }
+
+@media (max-width: 468px) {
+  .container {
+
+  width:100%;
+  }
+
+}
+
+@media (max-width: 150px) {
+  .container {
+    padding: 0 0 0 0;
+  }
+}
