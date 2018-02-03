@@ -4,13 +4,21 @@ require('dotenv').config();
 // Basic express setup:
 const PORT = 8080;
 const express = require("express");
+
+const nodeSassMiddleware = require('node-sass-middleware');
+const path = require('path')
 const bodyParser = require("body-parser");
 const app = express();
-
 app.use(bodyParser.urlencoded({ extended: true }));
+console.log(__dirname)
+app.use(nodeSassMiddleware({
+  src: '/../sass',
+  dest: '/../public/styles',
+  debug: true,
+  outputStyle: 'compressed'
+}))
+
 app.use(express.static("public"));
-
-
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = process.env.MONGODB_URI;
 

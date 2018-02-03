@@ -17,9 +17,11 @@
     "express": "^4.13.4",
     "heroku-cli": "^6.15.22",
     "md5": "^2.1.0",
-    "mongodb": "^2.2.34"
+    "mongodb": "^2.2.34",
+    "node-sass-middleware": "^0.11.0"
   },
   "devDependencies": {
+    "node-sass": "^4.7.2",
     "nodemon": "^1.9.2"
   }
 }
