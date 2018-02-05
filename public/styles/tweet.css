@@ -66,6 +66,7 @@ main .tweets {
   margin: 0;
   padding: 1em 0.5em 1em 0.5em;
   border-bottom: 1px solid #eee;
+  word-wrap: break-word;
 }
 
 

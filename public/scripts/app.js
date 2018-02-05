@@ -53,9 +53,7 @@ function createText(tweetObj) {
 function timeElapsed(time) {
   let currentTime = new Date();
   let msCurrTime = currentTime.getTime();
-  console.log(msCurrTime);
   let ago = msCurrTime - time;
-  console.log(ago);
   if (ago < 0) {
     return 0;
   } else {

@@ -8,5 +8,24 @@ $(document).ready(function() {
     } else {
       $(this).css({ 'background-color': 'transparent' });
     }
+    let form = ('<form>')
+    let input = $('<input name="i" value="1">')
+    $(form).append(input)
+    let div = $('<div/>')
+    $(div).append(form)
+    $.ajax({
+      type: 'POST',
+      url: '/tweets',
+      data: $(div).serialize()
+    })
+
+
+
   });
+  console.log('after')
+
+
+
 });
+
+
