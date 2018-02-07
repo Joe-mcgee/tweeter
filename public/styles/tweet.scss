@@ -1,0 +1,103 @@
+    /*css for individual tweets*/
+
+    main .tweets {
+      margin: 1em 2em;
+
+      .tweet {
+        background-color: #eee;
+        margin: 0;
+        opacity: 0.618;
+        margin-bottom: 1em;
+        border-radius: 4px;
+        border: 1px solid darkgrey;
+
+        .tweet-header {
+          padding: 0 0.5em 0.25em 0.5em;
+          .image-box {
+            width: 75px;
+            height: 75px;
+            float: left;
+            display: inline-block
+          }
+          .pp {
+            max-width: 100%;
+            max-height: 100%;
+          }
+          h2 {
+            display: inline-block;
+            margin: 0;
+            float: left;
+            padding-left: 0.25em;
+            vertical-align: middle;
+          }
+          .at {
+            display: inline-block;
+            float: right;
+            line-height: 28px;
+          }
+        }
+
+        .text {
+          background-color: white;
+          margin: 0;
+          padding: 1em 0.5em 1em 0.5em;
+          border-bottom: 1px solid #eee;
+          word-wrap: break-word;
+        }
+      }
+      .tweet:hover {
+        opacity: 1;
+      }
+    }
+
+
+    .tweet-header:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+
+
+
+    .tweets .tweet .tweet-footer {
+      background-color: white;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+    }
+
+
+    .tweets .tweet .tweet-footer .date {
+      display: inline-block;
+      margin: 0;
+      background-color: white;
+    }
+
+
+    .tweets .tweet .tweet-footer .options {
+      float: right;
+    }
+
+
+    .tweets .tweet .tweet-footer .options .buttons {
+      list-style-type: none;
+      margin: 0;
+      opacity: 0;
+    }
+
+    .tweets .tweet:hover .tweet-footer .options .buttons {
+      list-style-type: none;
+      margin: 0;
+      opacity: 1;
+    }
+
+
+    .tweets .tweet .tweet-footer .options .buttons li {
+      display: inline;
+    }
+
+
+    .options:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
