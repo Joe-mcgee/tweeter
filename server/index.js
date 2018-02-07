@@ -10,15 +10,17 @@ const path = require('path')
 const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-console.log(__dirname)
 app.use(nodeSassMiddleware({
-  src: '/../sass',
-  dest: '/../public/styles',
-  debug: true,
-  outputStyle: 'compressed'
+  src: path.join(__dirname, '../public/styles'),
+  dest: path.join(__dirname, '../public/styles'),
+  indentedSyntax: false,
+  sourceMap: true,
+  prefix: '/styles'
 }))
 
-app.use(express.static("public"));
+let pathcheck = path.join(__dirname, '../public/styles')
+console.log(pathcheck);
+app.use(express.static(path.join(__dirname, "../public")));
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = process.env.MONGODB_URI;
 
